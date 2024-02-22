@@ -21,7 +21,7 @@ CRUD(Create, Read, Update, Delete)가 가능하고 DB와 연동되는 게시판 
 <br/></br>
 
 ## 인프라 아키텍처
-![인프라아키텍처](https://github.com/gayeonni/networkcampus_project/blob/master/architecture.PNG)
+![인프라아키텍처](https://github.com/gayeonni/networkcampus_project/blob/master/architecture.png)
 <br/></br>
 
 ## 3-tier 애플리케이션 시나리오 : 쇼핑몰
