@@ -1,0 +1,12 @@
+echo "worker 1"
+ps -ef | grep java | grep -v grep | awk '{print $2}' | xargs kill -9
+rm -rf swu_blog_deploy
+git clone https://github.com/gayeonni/swu_blog_deploy.git
+cd swu_blog_deploy
+ls -a
+chmod 544 ./gradlew
+./gradlew clean build
+chmod 755 ./build/libs/blog-0.0.1-SNAPSHOT.jar
+ls -a
+nohup java -jar ./build/libs/blog-0.0.1-SNAPSHOT.jar > /dev/null 2>&1 &
+sleep 5
