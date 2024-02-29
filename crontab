@@ -1,0 +1,1 @@
+* * * * * find /home/storage/log/worker1/ -name "2024*" -exec cat {} \; > /home/storage/log/worker1/logrotate.log 2>&1
