@@ -1,0 +1,12 @@
+/home/storage/log/worker1/*.log {
+	su storage storage
+    rotate 7
+    daily
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 644 storage storage
+    dateext
+    dateformat -%Y%m%d_%H%M%S
+}
